@@ -1,6 +1,6 @@
 {
   "name": "jinxs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple, lightweight js framework for building reactive UIs",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "d"
+    "url": "https://github.com/sawcce/jinxs.js"
   },
   "keywords": [
     "js",

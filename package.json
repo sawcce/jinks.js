@@ -1,0 +1,25 @@
+{
+  "name": "jinxs",
+  "version": "0.0.2",
+  "description": "A simple, lightweight js framework for building reactive UIs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "d"
+  },
+  "keywords": [
+    "js",
+    "framewrok",
+    "html",
+    "reactive",
+    "ui"
+  ],
+  "author": "Sawcce",
+  "license": "ISC"
+}

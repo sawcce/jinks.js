@@ -1,10 +1,8 @@
-const Render = require("./lib/Render");
-const Component = require("./lib/Component");
-const Element = require("./lib/Element");
+import _Render from './lib/Render';
+import _Component from './lib/Component';
+import _Element from './lib/Element';
 
-module.exports = {
-    Render,
-    Component,
-    Element,
-    el: Element,
-}
+export let Render = _Render
+export let Component = _Component
+export let Element = _Element
+export let el = Element

@@ -1,3 +1,5 @@
+///<reference path="./index.d.ts"/>
+
 import _Render from './lib/Render';
 import _Component from './lib/Component';
 import _Element from './lib/Element';

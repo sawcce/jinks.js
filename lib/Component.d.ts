@@ -12,7 +12,7 @@ export class ComponentInstance {
 	private renderMethod: Function;
 	private mountMethod: Function;
 
-	appendTo(element: Element);
+	appendTo(element: Element): void;
 	render() : Element;
 }
 
@@ -22,7 +22,7 @@ export function Component({
 	...states
 }: {
 	render: Function | void;
-	mount: Function | void;
+	mount?: Function | void;
 	[k: string]: any;
 }): ({...initStates}?: Record<string, any>) => ComponentInstance;
 

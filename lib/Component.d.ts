@@ -1,9 +1,3 @@
-interface _Component {
-	render: Function | void;
-	mount: Function | void;
-	state: Record<string, any>;
-}
-
 type ComponentArgs = {
 	render: Function | void;
 	mount: Function | void;

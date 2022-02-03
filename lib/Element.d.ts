@@ -1,4 +1,4 @@
-export default function el({
+export function el({
 	name,
 	child,
 	children,
@@ -17,3 +17,5 @@ export default function el({
 	$click?: Function;
 	[k: string]: any;
 });
+
+export default el;

@@ -1,9 +1,3 @@
-type ComponentArgs = {
-	render: Function | void;
-	mount: Function | void;
-	states: Record<string, any>;
-};
-
 export class ComponentInstance {
 	
 	private node: Node;

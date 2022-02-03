@@ -4,7 +4,7 @@ type ComponentArgs = {
 	states: Record<string, any>;
 };
 
-class ComponentInstance {
+export class ComponentInstance {
 	
 	private node: Node;
 	private _state: Record<string, any>;
@@ -20,6 +20,10 @@ export function Component({
 	render,
 	mount,
 	...states
-}: ComponentArgs): ({...initStates}?: Record<string, any>) => ComponentInstance;
+}: {
+	render: Function | void;
+	mount: Function | void;
+	[k: string]: any;
+}): ({...initStates}?: Record<string, any>) => ComponentInstance;
 
 export default Component;

@@ -16,8 +16,10 @@ class ComponentInstance {
 	render() : Element;
 }
 
-export default function Component({
+export function Component({
 	render,
 	mount,
 	...states
 }: ComponentArgs): ({...initStates}?: Record<string, any>) => ComponentInstance;
+
+export default Component;

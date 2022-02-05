@@ -1,5 +1,5 @@
 import './style.css';
-import { el } from '../../index';
+import { el, txt } from '../../index';
 import Component from '../../lib/Component';
 
 let paragraphs = Component({
@@ -9,14 +9,15 @@ let paragraphs = Component({
 			text: state.text,
 		}),
 		el({
+			name: 'input',
+			id: state.id,
+		}),
+		el({
 			name: 'p',
 			text: state.text,
 			id: state.text,
 		}),
-		el({
-			name: 'input',
-			id: state.id,
-		}),
+		txt(`elo ${state.id}.`),
 	],
 	mount: () => console.log('Mounted !'),
 	text: 'lorem ipsum',

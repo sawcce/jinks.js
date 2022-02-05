@@ -1,3 +1,5 @@
+export function txt(text: string) : Node;
+
 export function el({
 	name,
 	child,
@@ -16,6 +18,6 @@ export function el({
 	dangerousHTML?: string;
 	$click?: Function;
 	[k: string]: any;
-});
+}) : Node;
 
 export default el;

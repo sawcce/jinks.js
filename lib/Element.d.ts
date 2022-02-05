@@ -11,8 +11,8 @@ export function el({
 	...opts
 }: {
 	name: string;
-	child?: Node;
-	children?: Node[];
+	child?: (Node|any);
+	children?: (Node|any)[];
 	text?: string;
 	parent?: Node;
 	dangerousHTML?: string;

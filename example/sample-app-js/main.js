@@ -25,17 +25,15 @@ let paragraphs = Component({
 });
 
 let button = Component({
-	render(state, set) {
+	render(state) {
 		return el({
 			name: 'button',
 			text: state.text,
 			$click: () => {
-				set({
-					count: state.count + 1,
-					text: `You clicked me ${state.count} ${
-						state.count == 1 ? 'time' : 'times'
-					}`,
-				});
+				state.count = state.count + 1;
+				state.text = `You clicked me ${state.count} ${
+					state.count == 1 ? 'time' : 'times'
+					}`;
 			},
 		});
 	},
@@ -54,4 +52,4 @@ par.appendTo(app);
 btn1.appendTo(app);
 btn2.appendTo(app);
 
-setInterval(() => {par.state.id = Date.now()}, 1000);
+setInterval(() => {par.state.id = Date.now(); }, 1000);

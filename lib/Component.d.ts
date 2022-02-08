@@ -1,5 +1,14 @@
 export class ComponentInstance {
-	
+	constructor({
+		render,
+		mount,
+		...states
+	}: {
+		render: (state: Record<string, any>) => any | void;
+		mount?: (state: Record<string, any>) => any | void;
+		[k: string]: any;
+	});
+
 	private node: Node;
 	private _state: Record<string, any>;
 	public state: Record<string, any>;
@@ -7,7 +16,7 @@ export class ComponentInstance {
 	private mountMethod: Function;
 
 	appendTo(element: Element): void;
-	render() : Element;
+	render(): Element;
 }
 
 export function Component({
@@ -15,9 +24,9 @@ export function Component({
 	mount,
 	...states
 }: {
-	render: Function | void;
-	mount?: Function | void;
+	render: (state: Record<string, any>) => any | void;
+	mount?: (state: Record<string, any>) => any | void;
 	[k: string]: any;
-}): ({...initStates}?: Record<string, any>) => ComponentInstance;
+}): ({ ...initStates }?: Record<string, any>) => ComponentInstance;
 
 export default Component;

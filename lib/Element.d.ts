@@ -1,4 +1,4 @@
-export function txt(text: string) : Node;
+export function txt(text: string) : Text;
 
 export function el({
 	name,
